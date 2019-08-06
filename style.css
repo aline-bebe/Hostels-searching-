@@ -1,9 +1,19 @@
 .first{
-    background-image: url("image/dd.jpeg");
+    background-image: url("image/grad.jpg");
     height: 500px;
     background-size: cover;
 }
 #nav{
     opacity: 0.7;
     color: black;
+}
+.footer{
+    background-color: grey;
+    height: 400px;
+    text-align: center;
+    color: black;
+    
+}
+.second{
+    text-align: center;
 }
