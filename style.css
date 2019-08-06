@@ -3,6 +3,7 @@
     height: 500px;
     background-size: cover;
 }
-.navbar navbar-inverse{
-    opacity: 0.9;
+#nav{
+    opacity: 0.7;
+    color: black;
 }
