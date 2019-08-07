@@ -1,9 +1,9 @@
 function validateForm() {
-    var un = document.loginform.usr.value;
-    var pw = document.loginform.pword.value;
+    var a = document.loginform.usr.value;
+    var b = document.loginform.pwd.value;
     var username = "user"; 
     var password = "pass";
-    if ((un == username) && (pw == password)) {
+    if ((a == username) && (b == password)) {
         return true;
     }
     else {
