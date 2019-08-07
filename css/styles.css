@@ -1,0 +1,21 @@
+
+.container1{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    height:500%;
+    width:100%;
+  
+}
+img{
+    width:30%;
+    height:30%;
+}
+.div1{
+    margin-left:8%;
+}
+p{
+    font-size:50px;
+    font-family: 'Roboto', sans-serif;
+font-family: 'Ma Shan Zheng', cursive;
+}
