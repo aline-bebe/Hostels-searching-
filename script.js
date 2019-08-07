@@ -7,7 +7,7 @@ function validateForm() {
         return true;
     }
     else {
-        alert ("Login was unsuccessful, please check your username and password");
+        alert (" unsuccessful, please check your username and password");
         return false;
     }
   }
