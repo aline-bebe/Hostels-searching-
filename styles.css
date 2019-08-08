@@ -18,7 +18,7 @@ p{
     width: 100px;
     font-weight: bolder;
     font-size: 18px;
-    background-color: chocolate;
+    background-color: 	#DCDCDC;
     border-radius: 15px;
 }
 .price{
@@ -27,7 +27,7 @@ p{
 .img{
     box-sizing: border-box;
     box-shadow: 10px;
-    background-color: beige;
+    
     
 }
 footer{
@@ -47,3 +47,9 @@ footer{
     width: 100%;
     background-size: 400px;
 }
+.page-footer{
+    margin-top:100px;
+    height:150px;
+    background-color:black;
+    opacity: 0.7;
+  }
