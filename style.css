@@ -21,9 +21,11 @@
     font-size:64px;
     color:chocolate;
     text-transform:capitalize;
+    font-family: 'Times New Roman', Times, serif;
 }
 .d-md-block p{
   font-size:24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 nav{
@@ -37,7 +39,7 @@ nav{
   background-color:black;
   margin-left:800px;
   padding-top:6px;
-  height:800px;
+  /* height:800px; */
  
 }
 
@@ -56,8 +58,8 @@ button a{
 
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  /* background-color: rgb(230, 106, 23); */
+  color: rgb(230, 106, 23);
 }
 
 .topnav a.active {
@@ -172,7 +174,7 @@ font-size:18px;
 /* styling about us */
 .page-footer{
   margin-top:100px;
-  height:200px;
+  height:150px;
   background-color:black;
   opacity: 0.7;
 }
