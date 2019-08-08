@@ -1,0 +1,55 @@
+body {
+    width: 100%;
+    border: 1px solid white;
+    padding: 0;
+    margin: 0;
+  }
+
+.img-responsive{
+    height: 350px;
+} 
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+} 
+#button{
+    float: right;
+    height: 50px;
+    width: 100px;
+    font-weight: bolder;
+    font-size: 18px;
+    background-color: 	#DCDCDC;
+    border-radius: 15px;
+}
+.price{
+    background-color: gray;
+}
+.img{
+    box-sizing: border-box;
+    box-shadow: 10px;
+    
+    
+}
+footer{
+    text-align: center;
+    font-size: 20px;
+}
+.team{
+    border-radius: 80px;
+    justify-content: space-between;
+    height: 400px;
+    width: 300px;
+
+}
+#hd{
+    background-image: url("link images/team.jpeg");
+    height: 300px;
+    width: 100%;
+    background-size: 400px;
+}
+.page-footer{
+    margin-top:100px;
+    height:150px;
+    background-color:black;
+    opacity: 0.7;
+  }
