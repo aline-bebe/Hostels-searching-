@@ -24,6 +24,8 @@
     <div class="row">
         <!-- <div id="form1">   -->
             <h2 style="text-align:center">FILL THE BOOKING FORM</h2>
+
+            <div class="alert">your message is send</div>  
         <div class="col-md-10">
         <div class="form-group">
         <label for="Name">Reg Number:</label>
@@ -96,7 +98,9 @@
         <div class="row">
                 <div class="col-md-5">
                         <label for="Name">email:</label>
-                        <input type="name" class="form-control" placeholder="email" name ="email" id="email">    
+                        
+                        <input type="name" class="form-control" placeholder="email" name ="email" id="email"> 
+                        
                 </div>
                 <div class="col-md-5">
                         <label for="Name">confirm email:</label>
@@ -139,7 +143,7 @@
                         </div>
         </div>
         <div class="col-md-12">
-            <button class="btn btn-success" onclick="Submit()">Click me</button>
+            <button class="btn btn-success" id="submit" onclick="Submit()" >Submit</button>
         </div>
                
     </div>
@@ -200,7 +204,36 @@
        
            
         ref.push(data);
-       
+        document.querySelector(".alert").style.dispaly="block";
+    setTimeout(function(){
+        document.querySelector(".alert").style.dispaly="none";
+    },3000);
     }
+
+
+$(document).ready(function(){
+$("#submit").click(function(){
+    $(".alert").show()
+var name=$("#name").val();
+var email=$("#email").val();
+// var textarea=$("#styled").val();
+
+// if (($("#email").val() == "") || ($("#name").val() == "") ||($("#styled").val() == "")) {
+
+//   $( "#emptyAlertText" ).fadeIn();
+// }
+// else{
+// alert("Hey " +name + "\n" + " we have received your message. Thank you for reaching out to us. ");
+
+});
+
+});
+
+    // show alert
+
+    // document.querySelector(".alert").style.dispaly="block";
+    // setTimeout(function(){
+    //     document.querySelector(".alert").style.dispaly="none";
+    // },3000);
   </script>
 </html>

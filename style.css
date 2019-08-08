@@ -39,3 +39,11 @@ margin-left:500px;
 color:black;
 
 }
+.alert{
+  text-align:center;
+  padding:10px;
+  background-color:#97c879;
+  margin-bottom:20px;
+  display:none;
+  width:500px;
+}
