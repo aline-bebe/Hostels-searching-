@@ -1,6 +1,6 @@
 function validateForm() {
     var a = document.loginform.usr.value;
-    var b = document.loginform.pwd.value;
+    var b = document.loginform.p.value;
     var username = "user"; 
     var password = "pass";
     if ((a == username) && (b == password)) {
