@@ -5,28 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Latest compiled and minified CSS -->
+    
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
+<script src="js/jquery-3.4.1.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+<script src="js/scripts.js"></script>
     <title>form</title>
 </head>
 <body>
 <div class="container">
-<form id="form1">
+<div id="form1">
     <div class="container">
     <div class="row">
-        <form id="form1">  
+        <!-- <div id="form1">   -->
             <h2 style="text-align:center">FILL THE BOOKING FORM</h2>
         <div class="col-md-10">
         <div class="form-group">
         <label for="Name">Reg Number:</label>
-        <input type="Reg" class="form-control" placeholder="Reg Number" id="reg">
+        <input type="Reg" class="form-control" placeholder="Reg Number" name="regnum" id="reg">
     </div>
        </div>
     </div>
@@ -43,9 +44,9 @@
             </div>
             <div class="col-md-5">
                     <label>Gender</label>
-                    <select id="university" required>
+                    <select id="gender" required>
                     <option >Male</option>
-                    <option >Femal</option> 
+                    <option >Female</option> 
                     </select>
             </div>
         </div>
@@ -53,19 +54,19 @@
            <div class="col-md-4">
              <div class="form-group">
              <label for="Name">First Name:</label>
-             <input type="name" class="form-control" placeholder="First Name" id="first">
+             <input type="name" class="form-control" placeholder="First Name"  name="name"  id="first">
              </div>
            </div>
            <div class="col-md-3">
            <div class="form-group">
            <label for="Middle">Midlle Name:</label>
-          <input type="name" class="form-control" placeholder="Middle Name" id="middle">
+          <input type="name" class="form-control" placeholder="Middle Name"  name="name"id="midlle">
            </div>
           </div>
           <div class="col-md-3">
             <div class="form-group">
               <label for="last">Last Name:</label>
-              <input type="name" class="form-control" placeholder="Last Name" id="last">
+              <input type="name" class="form-control" placeholder="Last Name" name="name" id="last">
             </div>
           </div>
         </div>
@@ -95,11 +96,11 @@
         <div class="row">
                 <div class="col-md-5">
                         <label for="Name">email:</label>
-                        <input type="name" class="form-control" placeholder="email" id="first">    
+                        <input type="name" class="form-control" placeholder="email" name ="email" id="email">    
                 </div>
                 <div class="col-md-5">
                         <label for="Name">confirm email:</label>
-                        <input type="name" class="form-control" placeholder="email" id="first">    
+                        <input type="name" class="form-control" placeholder="email" id="email">    
                 </div>
         </div>
         <div class="row">
@@ -107,14 +108,14 @@
             
                     <label for="Name">Phone Number:</label>
                     
-                            <input type="tel" class="form-control">
+                            <input type="tel" class="form-control" id="tel">
                           
         
                 
                 </div>
                 <div class="col-md-5">
                         <label>Payment Method</label>
-                    <select id="university" required>
+                        <select id="payment" required>
                         <option >Payment option</option>
                         <option >Monthly</option>
                         
@@ -138,11 +139,60 @@
                         </div>
         </div>
         <div class="col-md-12">
-                    <button type="submit" class="btn btn-default btn-success" id="submit">Submit</button>
+            <button class="btn btn-success" onclick="Submit()">Click me</button>
         </div>
                
     </div>
-</form>
-</div>   
+</div>
+</div>
+</div> 
+ 
 </body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!--  -->
+
+<script>
+    var config={
+        apiKey: "AIzaSyC84phUCEM1DCJCfdAFJu5OalIG1X1Dt84",
+        authDomain: "hostel-searching-b9fd3.firebaseapp.com",
+        databaseURL: "https://hostel-searching-b9fd3.firebaseio.com",
+        projectId: "hostel-searching-b9fd3",
+        storageBucket: "",
+        messagingSenderId: "413710150785",
+        appId: "1:413710150785:web:dd9c999ab148c6ee"
+      };
+      firebase.initializeApp(config);
+      console.log(firebase);
+      var database=firebase.database();
+      console.log(database);
+      var ref=database.ref("data");
+      
+    
+    //   var messagesRef=database.ref('messages');
+    var input=document.getElementById("form1")
+    
+    
+     function Submit(){
+         
+         var data={
+            // name:"gwino",
+            score:1000,
+            reg: document.getElementById("reg").value,
+            email: document.getElementById("email").value,
+            first: document.getElementById("first").value,
+            last: document.getElementById("last").value,
+            midlle: document.getElementById("midlle").value,
+            nationality: document.getElementById("nationality").value,
+            university: document.getElementById("university").value,
+            tel: document.getElementById("tel").value,
+            title: document.getElementById("title").value,
+            adress: document.getElementById("adress").value,
+            gender: document.getElementById("gender").value,
+         }
+       
+           
+        ref.push(data);
+       
+    }
+  </script>
 </html>
