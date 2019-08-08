@@ -162,15 +162,23 @@
         appId: "1:413710150785:web:dd9c999ab148c6ee"
       };
       firebase.initializeApp(config);
+      
       console.log(firebase);
       var database=firebase.database();
       console.log(database);
       var ref=database.ref("data");
+      ref.on("value",gotData,errData);
       
     
     //   var messagesRef=database.ref('messages');
     var input=document.getElementById("form1")
-    
+    function gotData(data){
+        console.log(data.val());
+    }
+    function errData(err){
+        console.log("Error!")
+        console.log(err);
+    }
     
      function Submit(){
          
