@@ -47,3 +47,12 @@ color:black;
   display:none;
   width:500px;
 }
+button{
+  padding: 10px 18px;
+  margin-top:40px;
+  margin-left:500px;
+  color:black; 
+}
+#payment2{
+  margin-left:80px;
+}
