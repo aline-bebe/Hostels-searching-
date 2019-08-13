@@ -12,8 +12,8 @@ This website will help students to search for hostels neirby the campus
 <h1>Behavior-driven development</h1>
 This is are the requirement:
 *user will go to our website 
-,and get the information about the building
-,user ca be able to see the room and book it online
+*and get the information about the building
+*user ca be able to see the room and book it online
 
 ## Known Bugs
 No bugs found yet. 
