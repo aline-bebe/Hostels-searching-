@@ -1,109 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hostels</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="js/bootstrap.min.js">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:700&display=swap" rel="stylesheet">
-
-
-</head>
-<body>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="js/bootstrap.min.js" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Slab:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="topnav ">
+        <img src="image/Selection_022.png" style="margin-left:-800px" />
+        <!-- <div id="href"> -->
+        <a href="index.html" style="margin-left:800px;">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="#contact">about us</a>
+        <!-- <button class="btn btn-primary"> <a href="login.html" >login</a></button> -->
+        <!-- </div> -->
+      </div>
+    </nav>
     <div class="container">
-        <h1 style="background-color: darkgrey; width:100%; font-size:30px; text-align: center; height: 100px; padding: 30px;"><b>NYARUGENGE CAMPUS</b></h1>
-
-        <div><br>
-            <p>Here are some information about<span style="color: blue;font-family: 'Josefin Slab', serif;"> available rooms in Nyarugenge campus</span> with their prices and how you can access them. If you are looking for one, help youself and<span style="color: blue;font-family: 'Josefin Slab', serif;"> make your choice.</span></p>
+      <h1
+        style="font-size:30px; text-align: center; height: 100px; padding: 30px;"
+      >
+        <b> WELCOME TO NYARUGENGE CAMPUS HOSTELS</b>
+      </h1>
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="https://www.exclusivelyeastbourne.co.uk/wp-content/uploads/2013/11/Image.jpg"
+            style="height:600px;width:400px; border-radius:25px;"
+          />
         </div>
+        <div class="col-md-6">
+          <h3>Description</h3>
+          <p id="paragraph">
+            Here are some information about<span
+              style="color:chocolate;font-family: 'Josefin Slab', serif;font-size:28px"
+            >
+              available rooms in Busogo campus</span
+            >
+            with their prices and how you can access them. If you are looking
+            for one, help youself and
+            <span
+              style="color:chocolate;font-family: 'Josefin Slab', serif;font-size:28px"
+              >make your choice.
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="figure">
+        <h2>available rooms</h2>
         <div class="row">
-            <div class="col-md-4 img">
-                <img src="link images/single nya.jpg" alt="single" width="350" class="img-responsive">
-                <p style="color: brown">Single Rooms</p>
-                <p style="color: chocolate">Available</p>
-                <i class="fa fa-bed" style="font-size:20px;"></i>
-                <i class="fa fa-male" style="font-size:20px;"></i>
-                <i class="fa fa-female" style="font-size:20px;"></i>
-                <i class="fa fa-shower" style="font-size:20px;"></i>
-                <i class="fa fa-trash" style="font-size:20px;"></i>
-                <i class="fa fa-wifi" style="font-size:20px;"></i>
-                <i class="fa fa-hospital-alt" style="font-size:20px;"></i>
-                <i class="fa fa-church" style="font-size:20px;"></i>
-                <br><br>
-                <p class="price">the price is: <br> <b>RWF 30,000/</b>monthly</p>
-                <a href="form.html"><input type="button" value="Book now" id="button"></a>
-
-            </div>
-            <div class="col-md-4 img">
-                <img src="link images/double nya.png" alt="double" width="350" class="img-responsive">
-                <p style="color: brown">Double Rooms</p>
-                <p style="color: chocolate">Available</p>
-                <i class="fa fa-bed" style="font-size:20px;"></i>
-                <i class="fa fa-male" style="font-size:20px;"></i>
-                <i class="fa fa-female" style="font-size:20px;"></i>
-                <i class="fa fa-shower" style="font-size:20px;"></i>
-                <i class="fa fa-trash" style="font-size:20px;"></i>
-                <i class="fa fa-wifi" style="font-size:20px;"></i>
-                <i class="fa fa-hospital" style="font-size:20px;"></i>
-                <i class="fa fa-church" style="font-size:20px;"></i>
-                <br><br>
-                <p class="price">the price is: <br> <b>RWF 20,000/</b>monthly</p>
-                <a href="form.html"><input type="button" value="Book now" id="button"></a>
-
-            </div>
-            <div class="col-md-4 img">
-                <img src="link images/square nya.jpg" alt="square" width="350" class="img-responsive">
-                <p style="color: brown">Square Rooms</p>
-                <p style="color: chocolate">Available</p>
-                <i class="fa fa-bed" style="font-size:20px;"></i>
-                <i class="fa fa-male" style="font-size:20px;"></i>
-                <i class="fa fa-female" style="font-size:20px;"></i>
-                <i class="fa fa-shower" style="font-size:20px;"></i>
-                <i class="fa fa-trash" style="font-size:20px;"></i>
-                <i class="fa fa-wifi" style="font-size:20px;"></i>
-                <i class="fa fa-hospital-alt" style="font-size:20px;"></i>
-                <i class="fa fa-church" style="font-size:20px;"></i>
-                <br><br>
-                <p class="price">the price is: <br> <b>RWF 10,000/</b>monthly</p>
-                <a href="form.html"><input type="button" value="Book now" id="button"></a>
-
-            </div>
-
-        </div><br><br>
-        
-        <!-- Social buttons -->
-    
-      </div><br>
-      <div id="contact">
-          <div class="container text-center">
-              <img class="brand-logo" src="image/Selection_022.png">
-              <div class="q-call">
-              <a href="#" class="q-call">Rwanda:+250 781879024 (Toll Free)</a><br>
-              <a href="#" class="q-call">Others: +250 7890 850 00</a><br>
-           
-             <a href="#" class="q-call">Residences</a>
-         
-            
-            </div>
+          <div class="col-md-4 img">
+            <img
+              src="link images/single nya.jpg"
+              alt="single"
+              width="350"
+              class="img-responsive"
+            />
+            <p style="color: brown">Single Rooms</p>
+            <p style="color: chocolate">Available</p>
+            <i class="fa fa-bed" style="font-size:20px;"></i>
+            <i class="fa fa-male" style="font-size:20px;"></i>
+            <i class="fa fa-female" style="font-size:20px;"></i>
+            <i class="fa fa-shower" style="font-size:20px;"></i>
+            <i class="fa fa-trash" style="font-size:20px;"></i>
+            <i class="fa fa-wifi" style="font-size:20px;"></i>
+            <i class="fa fa-hospital-alt" style="font-size:20px;"></i>
+            <i class="fa fa-church" style="font-size:20px;"></i>
+            <br /><br />
+            <p class="price">
+              the price is: <br />
+              <b>RWF 30,000/</b>monthly
+            </p>
+            <a href="form.html"
+              ><input type="button" value="Book now" id="button"
+            /></a>
+          </div>
+          <div class="col-md-4 img">
+            <img
+              src="link images/double nya.png"
+              alt="double"
+              width="350"
+              class="img-responsive"
+            />
+            <p style="color: brown">Double Rooms</p>
+            <p style="color: chocolate">Available</p>
+            <i class="fa fa-bed" style="font-size:20px;"></i>
+            <i class="fa fa-male" style="font-size:20px;"></i>
+            <i class="fa fa-female" style="font-size:20px;"></i>
+            <i class="fa fa-shower" style="font-size:20px;"></i>
+            <i class="fa fa-trash" style="font-size:20px;"></i>
+            <i class="fa fa-wifi" style="font-size:20px;"></i>
+            <i class="fa fa-hospital" style="font-size:20px;"></i>
+            <i class="fa fa-church" style="font-size:20px;"></i>
+            <br /><br />
+            <p class="price">
+              the price is: <br />
+              <b>RWF 20,000/</b>monthly
+            </p>
+            <a href="form.html"
+              ><input type="button" value="Book now" id="button"
+            /></a>
+          </div>
+          <div class="col-md-4 img">
+            <img
+              src="link images/square nya.jpg"
+              alt="square"
+              width="350"
+              class="img-responsive"
+            />
+            <p style="color: brown">Square Rooms</p>
+            <p style="color: chocolate">Available</p>
+            <i class="fa fa-bed" style="font-size:20px;"></i>
+            <i class="fa fa-male" style="font-size:20px;"></i>
+            <i class="fa fa-female" style="font-size:20px;"></i>
+            <i class="fa fa-shower" style="font-size:20px;"></i>
+            <i class="fa fa-trash" style="font-size:20px;"></i>
+            <i class="fa fa-wifi" style="font-size:20px;"></i>
+            <i class="fa fa-hospital-alt" style="font-size:20px;"></i>
+            <i class="fa fa-church" style="font-size:20px;"></i>
+            <br /><br />
+            <p class="price">
+              the price is: <br />
+              <b>RWF 10,000/</b>monthly
+            </p>
+            <a href="form.html"
+              ><input type="button" value="Book now" id="button"
+            /></a>
           </div>
         </div>
-          <footer >
-              <a href="#" class="fa fa-facebook"></a>
-              <a href="#" class="fa fa-twitter"></a>
-              <a href="#" class="fa fa-google"></a>
-              <a href="#" class="fa fa-linkedin"></a>
-              <a href="#" class="fa fa-youtube"></a>
-              <a href="#" class="fa fa-instagram"></a>
-              <a href="#" class="fa fa-skype"></a>
-              <p id="footerp">&copy;Copyright victorious Hostels searching 2019</p>
-          </footer>
-      
-        
-    
-</body>
+        <br /><br />
+
+        <!-- Social buttons -->
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container text-center">
+        <img class="brand-logo" src="image/Selection_022.png" />
+        <div class="q-call">
+          <a href="#" class="q-call">Rwanda:+250 781879024 (Toll Free)</a><br />
+          <a href="#" class="q-call">Others: +250 7890 850 00</a><br />
+
+          <a href="#" class="q-call">Residences</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-skype"></a>
+      <p id="footerp">&copy;Copyright victorious Hostels searching 2019</p>
+    </footer>
+  </body>
 </html>

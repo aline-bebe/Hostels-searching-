@@ -84,7 +84,8 @@ input[type="submit"] {
   color: white;
 }
 nav {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 28px;
   background-color: black;
   opacity: 0.7;
   height: 100px;
@@ -101,7 +102,8 @@ nav {
   margin-left: 500px;
   padding-top: -100px;
   color: white;
-  margin-left: 30px;
+  margin-left: 20px;
+  text-transform: uppercase;
   /* text-align: center; */
   padding: 12px 18px;
   text-decoration: none;
