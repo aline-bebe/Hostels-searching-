@@ -1,270 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Latest compiled and minified CSS -->
-    
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<script src="js/jquery-3.4.1.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
-<link rel="stylesheet" href="style.css">
-<script src="js/scripts.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+    <script src="js/jquery-3.4.1.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/scripts.js"></script>
     <title>form</title>
-</head>
-<body>
-<div class="container">
-<div id="form1">
+  </head>
+  <body>
     <div class="container">
-    <div class="row">
-        <!-- <div id="form1">   -->
+      <div id="form1">
+        <div class="container">
+          <div class="row">
+            <!-- <div id="form1">   -->
             <h2 style="text-align:center">FILL THE BOOKING FORM</h2>
 
-            <div class="alert">your message is send</div>  
-        <div class="col-md-10">
-        <div class="form-group">
-        <label for="Name">Reg Number:</label>
-        <input type="Reg" class="form-control" placeholder="Reg Number" name="regnum" id="reg">
-    </div>
-       </div>
-    </div>
-        <div class="row">
-            <div class="col-md-5">
-                    <div class="form-group">
-                         <label for="title">Title:</label>
-                         <select  id="title" required>
-                          <option >Miss</option>
-                          <option >Ms</option>
-                          <option >Mrs</option>
-                        </select>
-                    </div>
-            </div>
-            <div class="col-md-5">
-                    <label>Gender</label>
-                    <select id="gender" required>
-                    <option >Male</option>
-                    <option >Female</option> 
-                    </select>
-            </div>
-        </div>
-        <div class="row">
-           <div class="col-md-4">
-             <div class="form-group">
-             <label for="Name">First Name:</label>
-             <input type="name" class="form-control" placeholder="First Name"  name="name"  id="first">
-             </div>
-           </div>
-           <div class="col-md-3">
-           <div class="form-group">
-           <label for="Middle">Midlle Name:</label>
-          <input type="name" class="form-control" placeholder="Middle Name"  name="name"id="midlle">
-           </div>
-          </div>
-          <div class="col-md-3">
-            <div class="form-group">
-              <label for="last">Last Name:</label>
-              <input type="name" class="form-control" placeholder="Last Name" name="name" id="last">
+            <div class="alert">your message is send</div>
+            <div class="col-md-10">
+              <div class="form-group">
+                <label for="Name">Reg Number:</label>
+                <input
+                  type="Reg"
+                  class="form-control"
+                  placeholder="Reg Number"
+                  name="regnum"
+                  id="reg"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
+          <div class="row">
             <div class="col-md-5">
-                <label for="nationality">Nationality</label>
-                <select  id="nationality" required>
-                    <option >Rwanda</option>
-                    <option >Burundi</option>
-                    <option >Kenya</option>
-                    <option >Uganda</option>
-                    <option >Zambia</option>
-                    <option >Mozambique</option>
-                  
-                  </select>
-            </div>
-            <div class="col-md-5">
-                <label>university</label>
-                <select id="university" required>
-                <option >Kist </option>
-                <option >Huye Campus</option>
-                <option >CMHS</option>
-                <option >CBE</option>
+              <div class="form-group">
+                <label for="title">Title:</label>
+                <select id="title" required>
+                  <option>Miss</option>
+                  <option>Ms</option>
+                  <option>Mrs</option>
                 </select>
+              </div>
             </div>
-        </div>
-        <div class="row">
-                <div class="col-md-5">
-                        <label for="Name">email:</label>
-                        
-                        <input type="name" class="form-control" placeholder="email" name ="email" id="email"> 
-                        
-                </div>
-                <div class="col-md-5">
-                        <label for="Name">confirm email:</label>
-                        <input type="name" class="form-control" placeholder="email" id="email">    
-                </div>
-        </div>
-        <div class="row">
-                 <div class="col-md-5">
-            
-                    <label for="Name">Phone Number:</label>
-                    
-                            <input type="tel" class="form-control" id="tel">
-                          
-        
-                
-                </div>
-                <div class="col-md-5">
-                        <label>Payment Method</label>
-                        <select id="payment" required>
-                        <option >Payment option</option>
-                        <option >Monthly</option>
-                        
-                        </select>
-                    </div>
-        </div>
-        <div class="row">
-                            <div class="col-md-5">
-                                    <label for="Name">Adress:</label>
-                                    <input type="name" class="form-control" placeholder="adress" id="adress">
+            <div class="col-md-5">
+              <label>Gender</label>
+              <select id="gender" required>
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="Name">First Name:</label>
+                <input
+                  type="name"
+                  class="form-control"
+                  placeholder="First Name"
+                  name="name"
+                  id="first"
+                />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="Middle">Midlle Name:</label>
+                <input
+                  type="name"
+                  class="form-control"
+                  placeholder="Middle Name"
+                  name="name"
+                  id="midlle"
+                />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="last">Last Name:</label>
+                <input
+                  type="name"
+                  class="form-control"
+                  placeholder="Last Name"
+                  name="name"
+                  id="last"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <label for="nationality">Nationality</label>
+              <select id="nationality" required>
+                <option>Rwanda</option>
+                <option>Burundi</option>
+                <option>Kenya</option>
+                <option>Uganda</option>
+                <option>Zambia</option>
+                <option>Mozambique</option>
+              </select>
+            </div>
+            <div class="col-md-5">
+              <label>university</label>
+              <select id="university" required>
+                <option>Kist </option>
+                <option>Huye Campus</option>
+                <option>CMHS</option>
+                <option>CBE</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <label for="Name">email:</label>
 
+              <input
+                type="name"
+                class="form-control"
+                placeholder="email"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="col-md-5">
+              <label for="Name">confirm email:</label>
+              <input
+                type="name"
+                class="form-control"
+                placeholder="email"
+                id="email"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <label for="Name">Phone Number:</label>
 
-
-                            </div>
-                            <div class="col-md-5">
-                             
-                                <label for="date">Date of Birth</label>
-                            <input type="date" name="bday" style =" width: 100%;height:40px;border-radius:15px;">
-                    </div>
+              <input type="tel" class="form-control" id="tel" />
+            </div>
+            <div class="col-md-5">
+              <label>Payment Method</label>
+              <select id="payment" required>
+                <option>Payment option</option>
+                <option>Monthly</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <label for="Name">Adress:</label>
+              <input
+                type="name"
+                class="form-control"
+                placeholder="adress"
+                id="adress"
+              />
+            </div>
+            <div class="col-md-5">
+              <label for="date">Date of Birth</label>
+              <input
+                type="date"
+                name="bday"
+                style=" width: 100%;height:40px;border-radius:15px;"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <label for="payment" style="font-size:24px;font-family:cambria;"
+                >Make your payment Here
+              </label>
+              <button class="btn-success" id="payment2">Payment</button>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <button class="btn btn-success" id="submit" onclick="Submit()">
+              Submit
+            </button>
+          </div>
         </div>
-        <div class="row">
-                <div class="col-md-5">
-                        
-                            <label for="payment"style="font-size:24px;font-family:cambria;">Make your payment Here </label>
-                            <button class="btn-success" id="payment2" >Payment</button>
-                </div>
-                
-        </div>
-        <div class="col-md-12">
-            <button class="btn btn-success" id="submit" onclick="Submit()" >Submit</button>
-        </div>
-               
+      </div>
     </div>
-</div>
-</div>
-</div> 
- 
-</body>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<!--  -->
+  </body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <!--  -->
 
-<script>
-    var config={
-        apiKey: "AIzaSyC84phUCEM1DCJCfdAFJu5OalIG1X1Dt84",
-        authDomain: "hostel-searching-b9fd3.firebaseapp.com",
-        databaseURL: "https://hostel-searching-b9fd3.firebaseio.com",
-        projectId: "hostel-searching-b9fd3",
-        storageBucket: "",
-        messagingSenderId: "413710150785",
-        appId: "1:413710150785:web:dd9c999ab148c6ee"
-      };
-      firebase.initializeApp(config);
-      
-      console.log(firebase);
-      var database=firebase.database();
-      console.log(database);
-      var ref=database.ref("data");
-      ref.on("value",gotData,errData);
-      
-    
+  <script>
+    var config = {
+      apiKey: "AIzaSyC84phUCEM1DCJCfdAFJu5OalIG1X1Dt84",
+      authDomain: "hostel-searching-b9fd3.firebaseapp.com",
+      databaseURL: "https://hostel-searching-b9fd3.firebaseio.com",
+      projectId: "hostel-searching-b9fd3",
+      storageBucket: "",
+      messagingSenderId: "413710150785",
+      appId: "1:413710150785:web:dd9c999ab148c6ee"
+    };
+    firebase.initializeApp(config);
+
+    console.log(firebase);
+    var database = firebase.database();
+    console.log(database);
+    var ref = database.ref("data");
+    ref.on("value", gotData, errData);
+
     //   var messagesRef=database.ref('messages');
-    var input=document.getElementById("form1")
-    function gotData(data){
-        console.log(data.val());
+    var input = document.getElementById("form1");
+    function gotData(data) {
+      console.log(data.val());
     }
-    function errData(err){
-        console.log("Error!")
-        console.log(err);
-    }
-    
-     function Submit(){
-
-// email validation start
-    var email = document.getElementById('email');
-    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-
-    if (!filter.test(email.value)) {
-    alert('Please provide a valid email address');
-    email.focus;
-    return false;
- }
-// email validation End
-
-// validate empty place start here
-var empt = document.getElementById("form1").value;
-if (empt == "")
-{
-alert("Please input a Value");
-return false;
-}
-else 
-{
-alert('Code has accepted : you can try another');
-return true; 
-}
-// validate empty space end here
-
-
-
-         
-         var data={
-            // name:"gwino",
-            score:1000,
-            reg: document.getElementById("reg").value,
-            email: document.getElementById("email").value,
-            first: document.getElementById("first").value,
-            last: document.getElementById("last").value,
-            midlle: document.getElementById("midlle").value,
-            nationality: document.getElementById("nationality").value,
-            university: document.getElementById("university").value,
-            tel: document.getElementById("tel").value,
-            title: document.getElementById("title").value,
-            adress: document.getElementById("adress").value,
-            gender: document.getElementById("gender").value,
-         }
-       
-           
-        ref.push(data);
-        document.querySelector(".alert").style.dispaly="block";
-    setTimeout(function(){
-        document.querySelector(".alert").style.dispaly="none";
-    },3000);
+    function errData(err) {
+      console.log("Error!");
+      console.log(err);
     }
 
+    function Submit() {
+      // email validation start
+      var email = document.getElementById("email");
+      var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
-$(document).ready(function(){
-$("#submit").click(function(){
-    $(".alert").show()
-var name=$("#name").val();
-var email=$("#email").val();
-$("#submit").click(function(){
-        $("#form1").trigger("reset");
+      if (!filter.test(email.value)) {
+        alert("Please provide a valid email address");
+        email.focus;
+        return false;
+      }
+      // email validation End
+
+      // validate empty place start here
+      var empt = document.getElementById("form1").value;
+      if (empt == "") {
+        alert("Please input a Value");
+        return false;
+      } else {
+        alert("Code has accepted : you can try another");
+        return true;
+      }
+      // validate empty space end here
+
+      var data = {
+        // name:"gwino",
+        score: 1000,
+        reg: document.getElementById("reg").value,
+        email: document.getElementById("email").value,
+        first: document.getElementById("first").value,
+        last: document.getElementById("last").value,
+        midlle: document.getElementById("midlle").value,
+        nationality: document.getElementById("nationality").value,
+        university: document.getElementById("university").value,
+        tel: document.getElementById("tel").value,
+        title: document.getElementById("title").value,
+        adress: document.getElementById("adress").value,
+        gender: document.getElementById("gender").value
+      };
+
+      ref.push(data);
+      document.querySelector(".alert").style.dispaly = "block";
+      setTimeout(function() {
+        document.querySelector(".alert").style.dispaly = "none";
+      }, 3000);
+    }
+
+    $(document).ready(function() {
+      $("#submit").click(function() {
+        $(".alert").show();
+        var name = $("#name").val();
+        var email = $("#email").val();
+        $("#submit").click(function() {
+          $("#form1").trigger("reset");
+        });
+        // var textarea=$("#styled").val();
+
+        // if (($("#email").val() == "") || ($("#name").val() == "") ||($("#styled").val() == "")) {
+
+        //   $( "#emptyAlertText" ).fadeIn();
+        // }
+        // else{
+        // alert("Hey " +name + "\n" + " we have received your message. Thank you for reaching out to us. ");
+      });
     });
-// var textarea=$("#styled").val();
-
-// if (($("#email").val() == "") || ($("#name").val() == "") ||($("#styled").val() == "")) {
-
-//   $( "#emptyAlertText" ).fadeIn();
-// }
-// else{
-// alert("Hey " +name + "\n" + " we have received your message. Thank you for reaching out to us. ");
-
-});
-
-});
 
     // show alert
 
